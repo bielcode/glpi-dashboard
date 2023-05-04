@@ -22,10 +22,10 @@ function plugin_version_dashboard(){
 
 	return array('name'			=> __('Dashboard','dashboard'),
 					'version' 			=> '1.0.3',
-					'author'			   => '<a href="https://plugins.glpi-project.org/#/plugin/dashboard"> Stevenes Donato </b> </a>',
+					'author'			   => '<a href="https://github.com/99net/glpi-dashboard"> 99Net|Nuvemonline </b> </a>',
 					'license'		 	=> 'GPLv2+',
-					'homepage'			=> 'https://plugins.glpi-project.org/#/plugin/dashboard',
-					'minGlpiVersion'	=> '9.4'
+					'homepage'			=> 'https://github.com/wesleyrossetti/glpi-dashboard',
+					'minGlpiVersion'	=> '10.0'
 					);
 }
 
