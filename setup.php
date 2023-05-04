@@ -29,9 +29,13 @@ function plugin_version_dashboard(){
 					);
 }
 
-
-
-
+function plugin_dashboard_check_prerequisites(){
+     if (version_compare(GLPI_VERSION, '10.0', '>=')){
+         return true;
+     } else {
+         echo "GLPI version NOT compatible. Requires GLPI >= 10.0";
+     }
+}
 
 function plugin_dashboard_check_config($verbose=false){
 	if ($verbose) {
