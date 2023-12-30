@@ -22,20 +22,22 @@ function plugin_version_dashboard(){
 
 	return array('name'			=> __('Dashboard','dashboard'),
 					'version' 			=> '1.0.3',
-					'author'			   => '<a href="https://github.com/99net/glpi-dashboard"> 99Net|Nuvemonline </b> </a>',
+					'author'			=> '<a href="https://github.com/99net/glpi-dashboard"> 99Net|Nuvemonline </b> </a>',
 					'license'		 	=> 'GPLv2+',
 					'homepage'			=> 'https://github.com/wesleyrossetti/glpi-dashboard',
 					'minGlpiVersion'	=> '10.0'
 					);
 }
 
+
 function plugin_dashboard_check_prerequisites(){
-     if (version_compare(GLPI_VERSION, '10.0', '>=')){
-         return true;
-     } else {
-         echo "GLPI version NOT compatible. Requires GLPI >= 10.0";
-     }
+	if (version_compare(GLPI_VERSION, '10.0', '>=')){
+		return true;
+	} else {
+		echo "GLPI version NOT compatible. Requires GLPI >= 10.0";
+	}
 }
+
 
 function plugin_dashboard_check_config($verbose=false){
 	if ($verbose) {
