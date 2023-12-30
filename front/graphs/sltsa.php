@@ -124,5 +124,3 @@ $datahoje = date("Y-m-d");
 
 </body> 
 </html>
-
-teste
