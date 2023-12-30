@@ -16,7 +16,6 @@ https://glpi-project.org/
 https://glpi10.com/
 
 
-teste
 
 # Dashboard
 
