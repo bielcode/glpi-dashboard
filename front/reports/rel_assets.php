@@ -406,7 +406,7 @@ if($consulta > 0) {
 
 echo "
 
-<div class='well info_box fluid col-md-12 report-lg' style='margin-left: -1px;'>
+<div class='well info_box fluid col-md-12' style='margin-left: -1px;'>
 
 <table class='fluid'  style='margin-bottom: 25px; font-size: 18px; font-weight:bold; width:100%;' cellpadding = 1px >
 	<td  style='font-size: 16px; font-weight:bold; vertical-align:middle;'><span style='color:#000;'> ".__('Type').": </span>". __(ucfirst($type)) ." </td>
@@ -428,8 +428,7 @@ echo "
 	</thead>
 <tbody>";
 
-
-while($row = $DB->fetch_array($result_cham)){
+while($row = $result_cham->fetch_array()){
 
 if($type == 'software') {
 
